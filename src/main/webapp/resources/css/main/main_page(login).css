@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'SUIT-Regular';
+}
+#container {
+    width: 1300px;
+    height: 2200px;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+    position: relative;
+}
+body {
+    position: relative;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    width: 1300px;
+    height: 100px;
+    background-color: rgb(255, 242, 128);
+    position: fixed;
+}
+
+#logo-box {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#main-logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#search {
+    /* 나중에 검색창 삽입을 위해 500px로 변경 */
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    position : absolute;
+    left: 100px;
+}
+#search-box {
+    width: 70px;
+    height: 70px;
+    float: left;
+    background-color: #ffcb3d;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px
+    
+}
+#search-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+#input-search{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 23px;
+    left: 85px;
+    display: none;
+}
+#id-category{
+    width: 456px;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.category {
+    width: 120px;
+    height: 50px;
+    float: left;
+    background-color: rgb(255, 242, 128);
+    margin: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+    border-radius: 5px;
+    line-height: 1.9;
+}
+#more-list {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#more-list.active {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    text-align: left;
+}
+#more-menu {
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-color: white;
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 5px;
+}
+#more-menu.active {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+#more-list li {
+    font-size: 1.0em;
+    padding-left: 5px;
+}
+#user-login {
+    width: 370px;
+    height: 100px;
+    float: left;
+    /* margin-top: 10px; */
+    margin-left: 70px;
+}
+#user-profile{ 
+    width: 90px;
+    height: 90px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 2px solid #7e7e7e;
+    background-color: white;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user-nick-logout{
+    width: 100px;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+#user-info{
+    width: 100%;
+    height: 40%;
+    font-weight: bold;
+    line-height: 2.3;
+    border: 1px solid #7e7e7e;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+#logout {
+    width: 100%;
+    height: 40%;
+    font-weight: bold;
+    line-height: 2.3;
+    border: 1px solid #7e7e7e;
+    border-radius: 30px;
+    background-color: #ffcb3d;
+    margin: 10px 0 5px 0;
+}
+#user-alarm {
+    width: 100px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    margin: 10px 0 10px 50px;
+}
+main {
+    width: 1300px;
+    height: 1850px;
+    padding-top: 150px;
+    /* background-color: antiquewhite; */
+}
+#map-Bg {
+    width : 1200px;
+    height : 800px;
+    background-color: rgb(194, 194, 194);
+    /* margin-top: 50px; */
+    margin-left: 50px;
+    /* position: absolute;
+    top: 130px;
+    left: 50px; */
+    float: left;
+}
+#map {
+    width : 1197px; 
+    height : 797px;
+    margin-top: 1.5px;
+    margin-left: 1.5px;
+}
+#food-list {
+    width : 1200px;
+    height : 900px;
+    /* background-color: cornflowerblue; */
+    margin-top: 30px;
+    margin-left: 50px;
+    float: left;
+}
+.restaurant-info li {
+    line-height: 1.5;
+}
+.restaurant-info {
+    width: 250px;
+    height: 350px;
+    /* background-color: chartreuse; */
+    float: left;
+    margin: 25px;
+}
+.info-open {
+    width: 60px;
+    margin-right: 0px;
+    margin-left: 190px;
+    background-color: cornflowerblue;
+    text-align: center;
+    border: 1xp solid #7e7e7e;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    padding: 0 5px;
+}
+.info-close{
+    width: 72px;
+    margin-right: 0px;
+    margin-left: 185px;
+    background-color: orangered;
+    text-align: center;
+    border: 1xp solid #7e7e7e;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    padding: 0 5px;
+}
+.info-break {
+    width: 102px;
+    margin-right: 0px;
+    margin-left: 153px;
+    background-color: #ffcb3d;
+    text-align: center;
+    border: 1xp solid #7e7e7e;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    padding: 0 5px;
+}
+#food-list img {
+    width: 250px;
+    height: 200px;
+}
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+    border-top: 2px solid #222;
+}
+#footer-img-box {
+    float: left;
+}
+#footer-logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 45px;
+    float: left;
+}
+#footer-img-box>p {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 15px;
+    /* background-color: rgb(145, 50, 50); */
+}
+#terms {
+    width: 700px;
+    height: 120px;
+    /* background-color: gold; */
+    float: left;
+    margin-left: 70px;
+    color: #7e7e7e;
+}
+#company-info {
+    width: 350px;
+    height: 120px;
+    /* background-color: lightgreen; */
+    float: right;
+    /* padding-top: 5px;
+    padding-left: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#company-info>ul {
+    list-style-type: disc;
+}
+#company-info li {
+    line-height: 1.5;
+    color: #7e7e7e;
+}
+#footer-nav-info a{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+#footer-nav {
+    margin-left: 55px;
+}
+#footer-nav-info li {
+    color: #7e7e7e;
+    float: left;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+}
+#footer-nav-info li:last-child {
+    border: none;
+}
+
+#up-icon {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    left: 1790px;
+    top: 830px
+}

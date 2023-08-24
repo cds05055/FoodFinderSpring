@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'SUIT-Regular';
+}
+#container {
+    width: 920px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#main {
+    width: 920px;
+    height: 900px;
+    
+}
+#top-div {
+    height: 350px;
+    margin-top: 50px;
+}
+#main-logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.main-box {
+    display: flex;
+    justify-content: center;
+}
+.main-box>p {
+    font-size: 2em;
+    float: left;
+    font-weight: bold;
+    margin-top: 30px;
+}
+#sns-login-box {
+    margin-left: 95px;
+}
+.login-button {
+    width: 711px;
+    height: 100%;
+    margin: 10px;
+}
+#google-login-button {
+    border: 1px solid #ccc;
+}
+
+#middle-div {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#bottom-div {
+    text-align: center;
+}
+.user-input {
+    width: 300px;
+    height: 50px;
+    font-size: 1.3em;
+    margin: 10px;
+}
+.login-icon {
+    width: 50px;
+    height: 50px;
+    
+}
+#input-login-button {
+    width: 300px;
+    height: 50px;
+    font-size: 1.5em;
+    line-height: 2;
+    margin: 10px;
+    /* margin-left: 250px; */
+    border-radius: 15px;
+    background-color: #ffcb3d;
+}
+ul {
+    list-style-type: none;
+    margin-left: 330px;
+}
+#find-user-info-box li {
+    color: #222;
+    float: left;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+}
+#find-user-info-box li:last-child {
+    border: none;
+}

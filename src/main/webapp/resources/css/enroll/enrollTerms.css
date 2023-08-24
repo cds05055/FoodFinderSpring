@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'SUIT-Regular';
+}
+#container {
+    width: 1300px;
+    height: 800px;
+    margin: 0 auto;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    width: 1300px;
+    height: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(255, 242, 128);
+    position: fixed;
+}
+#logo-box {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#hd-main-logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#search {
+    /* 나중에 검색창 삽입을 위해 500px로 변경 */
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    position : absolute;
+    left: 100px;
+}
+#search-box {
+    width: 70px;
+    height: 70px;
+    float: left;
+    background-color: #ffcb3d;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px
+    
+}
+#search-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+#input-search{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 23px;
+    left: 85px;
+    display: none;
+}
+#id-category{
+    width: 456px;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.category {
+    width: 120px;
+    height: 50px;
+    float: left;
+    background-color: rgb(255, 242, 128);
+    margin: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+    border-radius: 5px;
+    line-height: 1.9;
+}
+#more-list {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#more-list.active {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    text-align: left;
+}
+#more-menu {
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-color: white;
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 5px;
+}
+#more-menu.active {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+#more-list li {
+    font-size: 1.0em;
+    padding-left: 5px;
+}
+#user-log-sign {
+    width: 350px;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+
+
+
+main {
+    width: 1300px;
+    height: 900px;
+}
+#main-logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 100px;
+}
+.main-box {
+    display: flex;
+    justify-content: center;
+}
+.main-box>p {
+    
+    font-size: 2em;
+    float: left;
+    font-weight: bold;
+    margin-top: 130px;
+}
+#sign-form {
+    width: 600px;
+    margin-left: 400px;
+    text-align: left;
+}
+#check-all {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+#all-check-box {
+    margin-bottom: 20px;
+}
+#all-check-box>p {
+    float: left;
+}
+#terms-box {
+    width: 55%;
+    margin-left: 30px;
+}
+.check-box{
+    margin-bottom: 20px;
+}
+.check-button {
+    float: left;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.check-button>p {
+    float: left;
+}
+textarea {
+    width: 400px;
+    height: 80px;
+    margin-left: 15px;
+    background-color: #ddd;
+}
+.ok-btn {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+#back-btn{
+    margin-left: 50px;
+    border: 2px solid black;
+}
+#next-btn {
+    background-color: #ffcb3d;
+    margin-left: 80px;
+}
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+    border-top: 2px solid #222;
+}
+#footer-nav-info a{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+#footer-nav {
+    margin-left: 55px;
+}
+#footer-nav-info li {
+    color: #7e7e7e;
+    float: left;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+}
+#footer-nav-info li:last-child {
+    border: none;
+}
